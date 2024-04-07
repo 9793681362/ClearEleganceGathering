@@ -18,7 +18,8 @@ header nav .nav-left ul li {
   padding: 0 10px;
 }
 header nav .nav-left ul li a {
-  color: #7A3DA4;
+  color: #5C4383;
+  font-size: 14px;
 }
 header nav .nav-right ul {
   display: flex;
@@ -27,8 +28,66 @@ header nav .nav-right ul li {
   padding: 0 10px;
 }
 header nav .nav-right ul li a {
-  color: #7A3DA4;
+  color: #5C4383;
+  font-size: 14px;
 }
 header nav .nav-right ul li:nth-child(1) {
   line-height: 21px;
+}
+main {
+  background-color: #5C4383;
+}
+main .main-body {
+  padding: 40px 0;
+  text-align: center;
+}
+main .main-body .r {
+  display: block;
+  text-align: center;
+  margin: 0 auto 30px;
+  width: 144px;
+  height: 144px;
+  line-height: 144px;
+  background-color: 7A3DA4;
+  border: 1px solid #fff;
+  border-radius: 15%;
+  font-size: 108px;
+  color: #fff;
+}
+main .main-body .lead {
+  margin: 0 114px 30px 114px;
+  color: #fff;
+  font-size: 30px;
+}
+main .main-body .lead a {
+  display: inline-block;
+  padding: 15px 30px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  border: 1px solid #cdbfe3;
+  border-radius: 5px;
+}
+main .main-body .version {
+  margin: -15px 0 30px 0;
+  color: #9783b9;
+  font-size: 14px;
+}
+footer {
+  padding: 50px 0;
+  background-color: #2A2730;
+}
+footer .container ul {
+  display: flex;
+}
+footer .container ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+footer .container ul li:nth-last-child(-n+3) {
+  margin-left: 15px;
+}
+footer .container p {
+  color: #99979c;
+  font-size: 14px;
 }
