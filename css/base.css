@@ -1,23 +1,29 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    ;
 }
 
-.container{
+.container {
     width: 1200px;
     margin: 0 auto;
 }
 
 
-ul{
+ul {
     list-style-type: none;
 }
 
-a{
-    text-decoration: none;
+a {
+    text-decoration: none !important;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none !important;
     color: #333;
 }

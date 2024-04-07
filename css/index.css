@@ -2,17 +2,23 @@ header {
   display: flex;
   height: 50px;
 }
-header .logo .logo-img {
+header .logo-img {
+  float: left;
   height: 50px;
 }
 header nav {
   display: flex;
   align-items: center;
-  flex: 1;
   justify-content: space-between;
+  height: 100%;
+}
+header nav .nav-left {
+  height: 100%;
 }
 header nav .nav-left ul {
+  height: 100%;
   display: flex;
+  align-items: center;
 }
 header nav .nav-left ul li {
   padding: 0 10px;
@@ -21,8 +27,13 @@ header nav .nav-left ul li a {
   color: #5C4383;
   font-size: 14px;
 }
+header nav .nav-right {
+  height: 100%;
+}
 header nav .nav-right ul {
+  height: 100%;
   display: flex;
+  align-items: center;
 }
 header nav .nav-right ul li {
   padding: 0 10px;
@@ -30,9 +41,6 @@ header nav .nav-right ul li {
 header nav .nav-right ul li a {
   color: #5C4383;
   font-size: 14px;
-}
-header nav .nav-right ul li:nth-child(1) {
-  line-height: 21px;
 }
 main {
   background-color: #5C4383;
@@ -90,4 +98,31 @@ footer .container ul li:nth-last-child(-n+3) {
 footer .container p {
   color: #99979c;
   font-size: 14px;
+}
+.featurette {
+  padding: 100px 0;
+}
+.featurette .container h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.featurette .container p {
+  text-align: center;
+  font-size: 21px;
+  color: #555;
+}
+.featurette .container .section {
+  margin: 0 auto 20px;
+}
+.featurette .container .half-rule {
+  margin: 40px auto;
+  width: 100px;
+}
+.featurette .container a {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #5C4383;
+  border-radius: 5px;
+  color: #5C4383;
+  font-size: 18px;
 }
