@@ -1,0 +1,21 @@
+header .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  height: 80px;
+}
+header .head .logo a {
+  display: block;
+  background: url(../images/logo2.png) no-repeat;
+  width: 149px;
+  height: 110px;
+  text-indent: -9999px;
+  background-size: 100%;
+}
+header .head .button-wrapper {
+  display: flex;
+}
+header .head .button-wrapper li {
+  margin: 10px 16px;
+}
