@@ -17,7 +17,6 @@ v2.addEventListener('click', function () {
 })
 
 open.addEventListener('click', function () {
-    window.location.href = 'http://rick1001b.cn/open/'
+    window.location.href = 'https://www.baidu.com'
 })
-
 
