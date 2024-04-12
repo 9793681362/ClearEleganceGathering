@@ -5,6 +5,9 @@ header .head {
   padding: 0 80px;
   height: 80px;
 }
+header .head .logo {
+  margin-top: 40px;
+}
 header .head .logo a {
   display: block;
   background: url(../images/logo2.png) no-repeat;
@@ -12,10 +15,141 @@ header .head .logo a {
   height: 110px;
   text-indent: -9999px;
   background-size: 100%;
+  border-radius: 10px;
 }
 header .head .button-wrapper {
+  margin-left: 60px;
   display: flex;
 }
 header .head .button-wrapper li {
   margin: 10px 16px;
+}
+header .head .button-wrapper li a {
+  color: #6A6A6A;
+}
+header .head .button-wrapper li:nth-child(1) a {
+  color: #222222;
+}
+header .head .login {
+  display: flex;
+  align-items: center;
+}
+header .head .login .clear-home {
+  margin-right: 20px;
+}
+header .head .login .clear-home a {
+  padding: 12px;
+}
+header .head .login .clear-home svg {
+  position: relative;
+  top: 3px;
+}
+header .head .login .user button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
+  padding: 8px 8px 8px 8px;
+  border-radius: 30px;
+  border: 1px solid #DDDDDD;
+  background-color: #fff;
+  width: 86px;
+  height: 48px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header .head .login .user button div svg {
+  width: 25px;
+  height: 25px;
+}
+header .head .login .user button div:nth-child(2) svg {
+  width: 30px;
+  height: 30px;
+}
+.main-input {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  caret-color: transparent;
+}
+.main-input .box-input {
+  display: flex;
+  cursor: pointer;
+  border: 1px solid #DDDDDD;
+  border-radius: 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.main-input .box-input .input-box-1 {
+  padding: 14px 32px;
+}
+.main-input .box-input .input-box-1 label {
+  display: block;
+  width: 218px;
+  cursor: pointer;
+}
+.main-input .box-input .input-box-1 label input {
+  outline: none;
+  border: none;
+  width: 100%;
+  caret-color: initial;
+}
+.main-input .box-input .input-box-1:hover {
+  background-color: #DDDDDD;
+  border-radius: 32px;
+}
+.main-input .box-input .input-box-1:hover label input {
+  background-color: #DDDDDD;
+}
+.main-input .box-input .input-box-2 {
+  display: flex;
+}
+.main-input .box-input .input-box-2 .input-box-2-left {
+  padding: 14px 32px;
+  font-size: 14px;
+}
+.main-input .box-input .input-box-2 .input-box-2-left div:nth-child(2) {
+  color: #8a8a8a;
+}
+.main-input .box-input .input-box-2 .input-box-2-right {
+  padding: 14px 32px;
+  font-size: 14px;
+}
+.main-input .box-input .input-box-2 .input-box-2-right div:nth-child(2) {
+  color: #8a8a8a;
+}
+.main-input .box-input .input-box-2 .input-box-2-left:hover {
+  background-color: #DDDDDD;
+  border-radius: 32px;
+}
+.main-input .box-input .input-box-2 .input-box-2-right:hover {
+  background-color: #DDDDDD;
+  border-radius: 32px;
+}
+.main-input .box-input .input-box-3 {
+  position: relative;
+  width: 200px;
+  padding: 14px 32px;
+  font-size: 14px;
+}
+.main-input .box-input .input-box-3 div:nth-child(2) {
+  color: #8a8a8a;
+}
+.main-input .box-input .input-box-3 .input-box-3-button {
+  position: absolute;
+  border-radius: 50px;
+  top: 8px;
+  right: 18px;
+  height: 48px;
+  width: 48px;
+  background-color: #FF385C;
+}
+.main-input .box-input .input-box-3 .input-box-3-button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.main-input .box-input .input-box-3:hover {
+  background-color: #DDDDDD;
+  border-radius: 32px;
 }

@@ -42,6 +42,20 @@ header nav .nav-right ul li a {
   color: #5C4383;
   font-size: 14px;
 }
+header nav .nav-right ul .nav-down {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  height: 123px;
+  width: 158px;
+  top: 50px;
+  margin-left: 8px;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+header nav .nav-right ul .nav-down a {
+  padding: 5px 0;
+}
 main {
   background-color: #5C4383;
 }

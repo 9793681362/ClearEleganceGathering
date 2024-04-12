@@ -3,9 +3,13 @@
     margin: 0;
 }
 
+* {
+    caret-color: transparent
+}
+
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    ;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {

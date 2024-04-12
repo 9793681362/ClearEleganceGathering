@@ -8,6 +8,7 @@ header {
 
 
         .logo {
+            margin-top: 40px;
 
             a {
                 display: block;
@@ -16,17 +17,202 @@ header {
                 height: 110px;
                 text-indent: -9999px;
                 background-size: 100%;
+                border-radius: 10px;
             }
 
         }
 
         .button-wrapper {
+            margin-left: 60px;
             display: flex;
 
             li {
                 margin: 10px 16px;
+
+                a {
+                    color: #6A6A6A;
+
+                }
             }
 
+            li:nth-child(1) a {
+                color: #222222;
+            }
+
+        }
+
+        .login {
+            display: flex;
+            align-items: center;
+
+            .clear-home {
+                margin-right: 20px;
+
+                a {
+                    padding: 12px;
+                }
+
+                svg {
+                    position: relative;
+                    top: 3px;
+                }
+            }
+
+            .user {
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 70px;
+                    padding: 8px 8px 8px 8px;
+                    border-radius: 30px;
+                    border: 1px solid #DDDDDD;
+                    background-color: #fff;
+                    width: 86px;
+                    height: 48px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+                    div {
+                        svg {
+                            width: 25px;
+                            height: 25px;
+
+                        }
+                    }
+
+                    div:nth-child(2) {
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+.main-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    caret-color: transparent; // 取出 输入光标
+
+    .box-input {
+        display: flex;
+        cursor: pointer;
+
+        border: 1px solid #DDDDDD;
+        border-radius: 32px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .input-box-1 {
+            padding: 14px 32px;
+
+
+            label {
+                display: block;
+                width: 218px;
+                cursor: pointer;
+
+                input {
+                    outline: none; //input点击后隐藏默认轮廓
+                    border: none;
+                    width: 100%;
+                    caret-color: initial;
+                }
+
+            }
+        }
+
+
+        .input-box-1:hover {
+            background-color: #DDDDDD;
+            border-radius: 32px;
+
+            label {
+
+
+                input {
+                    background-color: #DDDDDD;
+                }
+
+                div {}
+            }
+        }
+
+        .input-box-2 {
+            display: flex;
+
+            .input-box-2-left {
+                padding: 14px 32px;
+                font-size: 14px;
+
+                div:nth-child(2) {
+                    color: #8a8a8a;
+                }
+            }
+
+            .input-box-2-right {
+                padding: 14px 32px;
+                font-size: 14px;
+
+                div:nth-child(2) {
+                    color: #8a8a8a;
+                }
+            }
+
+            .input-box-2-left:hover {
+                background-color: #DDDDDD;
+                border-radius: 32px;
+            }
+
+            .input-box-2-right:hover {
+                background-color: #DDDDDD;
+                border-radius: 32px;
+            }
+        }
+
+        
+
+
+
+        .input-box-3 {
+            // display: flex;
+            position: relative;
+            width: 200px;
+            padding: 14px 32px;
+            font-size: 14px;
+
+            div:nth-child(2) {
+                color: #8a8a8a;
+            }
+
+            .input-box-3-button {
+                position: absolute;
+                border-radius: 50px;
+                top: 8px;
+                right: 18px;
+                height: 48px;
+                width: 48px;
+                background-color: #FF385C;
+
+                svg {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+                }
+            }
+        }
+
+        .input-box-3:hover {
+            background-color: #DDDDDD;
+            border-radius: 32px;
         }
     }
 }
