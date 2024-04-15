@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+* {
+  caret-color: transparent;
+}
+body {
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  width: 320vw;
+  margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none !important;
+  color: #333;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #333;
+}

@@ -8,9 +8,12 @@ let open = document.querySelector('.open')
 
 
 v1.addEventListener('click', function () {
-    nav_down.style.display = "flex";
-    console.log(v1);
-})
+    if (nav_down.style.display === "none") {
+        nav_down.style.display = "flex";
+    } else {
+        nav_down.style.display = "none";
+    }
+});
 
 v2.addEventListener('click', function () {
     window.location.assign('http://www.baidu.com')
@@ -19,4 +22,3 @@ v2.addEventListener('click', function () {
 open.addEventListener('click', function () {
     window.location.href = 'https://www.baidu.com'
 })
-

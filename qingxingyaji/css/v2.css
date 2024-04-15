@@ -1,0 +1,67 @@
+header .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 21.33333333vw;
+  height: 21.33333333vw;
+}
+header .head .logo {
+  margin-top: 10.66666667vw;
+}
+header .head .logo a {
+  display: block;
+  background: url(../images/logo2.png) no-repeat;
+  width: 39.73333333vw;
+  height: 29.33333333vw;
+  text-indent: -9999px;
+  background-size: 100%;
+  border-radius: 2.66666667vw;
+}
+header .head .button-wrapper {
+  margin-left: 16vw;
+  display: flex;
+}
+header .head .button-wrapper li {
+  margin: 2.66666667vw 4.26666667vw;
+}
+header .head .button-wrapper li a {
+  color: #6A6A6A;
+}
+header .head .button-wrapper li:nth-child(1) a {
+  color: #222222;
+}
+header .head .login {
+  display: flex;
+  align-items: center;
+}
+header .head .login .clear-home {
+  margin-right: 5.33333333vw;
+}
+header .head .login .clear-home a {
+  padding: 3.2vw;
+}
+header .head .login .clear-home svg {
+  position: relative;
+  top: 0.8vw;
+}
+header .head .login .user button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 18.66666667vw;
+  padding: 2.13333333vw 2.13333333vw 2.13333333vw 2.13333333vw;
+  border-radius: 8vw;
+  border: 0.26666667vw solid #DDDDDD;
+  background-color: #fff;
+  width: 22.93333333vw;
+  height: 12.8vw;
+  box-shadow: 0 1.06666667vw 2.13333333vw rgba(0, 0, 0, 0.1);
+}
+header .head .login .user button div svg {
+  width: 6.66666667vw;
+  height: 6.66666667vw;
+}
+header .head .login .user button div:nth-child(2) svg {
+  width: 8vw;
+  height: 8vw;
+}
