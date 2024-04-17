@@ -2,7 +2,9 @@
 @baseSize: 15.52vw;
 @baseSizeHeight: 11.46vw;
 
-
+.w {
+    padding: 0 (80 / @baseSize);
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -10,8 +12,9 @@ body {
 }
 
 
-
 header {
+    border-bottom: 1px solid #EAEAEA;
+
     .head {
         display: flex;
         align-items: center;
@@ -40,17 +43,21 @@ header {
             display: flex;
 
             li {
-                margin: (10 / @baseSize) (16 / @baseSize);
+                padding: (10 / @baseSize) (16 / @baseSize);
 
                 a {
-                    color: #6A6A6A;
+                    color: #BCBCBC;
+                }
 
+                .active {
+                    color: #222222;
                 }
             }
 
-            li:nth-child(1) a {
-                color: #222222;
+            li a:hover {
+                color: #8a8a8a;
             }
+
 
         }
 
@@ -66,6 +73,7 @@ header {
                 }
 
                 svg {
+                    cursor: pointer;
                     width: (16 / @baseSize);
                     height: (16 / @baseSize);
                     position: relative;
@@ -76,53 +84,44 @@ header {
             .user {
 
                 button {
+                    cursor: pointer;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    width: (70 / @baseSize);
                     padding: (8 / @baseSize) (8 / @baseSize) (8 / @baseSize) (8 / @baseSize);
                     border-radius: (30 / @baseSize);
                     border: (1 / @baseSize) solid #DDDDDD;
                     background-color: #fff;
-                    width: (86 / @baseSize);
-                    height: (48 / @baseSize);
+                    width: (70 / @baseSize);
                     box-shadow: 0 (4 / @baseSize) (8 / @baseSize) rgba(0, 0, 0, 0.1);
 
                     div {
                         svg {
-                            width: (25 / @baseSize);
-                            height: (25 / @baseSize);
+                            width: (20 / @baseSize);
+                            height: (20 / @baseSize);
 
                         }
                     }
 
                     div:nth-child(2) {
                         svg {
-                            width: (30 / @baseSize);
-                            height: (30 / @baseSize);
+                            width: (20 / @baseSize);
+                            height: (20 / @baseSize);
                         }
                     }
 
                 }
+
 
             }
         }
     }
 }
 
-
-
-
-
-
-
-
-
-
 .main-input {
     display: flex;
     justify-content: center;
-    margin-top: (20 / @baseSize);
+    margin: (15 / @baseSize) 0;
     caret-color: transparent; // 取出 输入光标
 
     .box-input {
@@ -135,11 +134,9 @@ header {
 
         .input-box-1 {
             position: relative;
-            padding: (14 / @baseSize) (32 / @baseSize);
+            padding: (10 / @baseSize) (32 / @baseSize);
 
             label {
-                display: block;
-                width: (218 / @baseSize);
                 cursor: pointer;
 
                 input {
@@ -147,6 +144,11 @@ header {
                     border: none;
                     width: 100%;
                     caret-color: initial;
+                    font-size: (14 / @baseSize);
+                }
+
+                div {
+                    margin-bottom: 2px;
                 }
 
             }
@@ -158,15 +160,18 @@ header {
             border-radius: (32 / @baseSize);
 
             label {
+                div {}
+
                 input {
                     background-color: #DDDDDD;
                 }
 
-                div {}
+
             }
         }
 
         .input-box-1::after {
+            display: block;
             content: "";
             position: absolute;
             top: 50%;
@@ -178,6 +183,9 @@ header {
             border-radius: 50%;
         }
 
+        .box1-after::after {
+            display: none !important;
+        }
 
         .input-box-2 {
             display: flex;
@@ -185,7 +193,6 @@ header {
             .input-box-2-left {
                 position: relative;
                 padding: (14 / @baseSize) (32 / @baseSize);
-                font-size: (14 / @baseSize);
 
                 div:nth-child(2) {
                     color: #8a8a8a;
@@ -208,7 +215,6 @@ header {
             .input-box-2-right {
                 position: relative;
                 padding: (14 / @baseSize) (32 / @baseSize);
-                font-size: (14 / @baseSize);
 
                 div:nth-child(2) {
                     color: #8a8a8a;
@@ -240,21 +246,45 @@ header {
         }
 
 
+        .input-box-center {
+            display: none;
+            position: relative;
+            width: (200 / @baseSize);
+            padding: 14px 24px;
 
+            div:nth-child(2) {
+                color: #8a8a8a;
+            }
+        }
 
+        .input-box-center:hover {
+            background-color: #DDDDDD;
+            border-radius: (32 / @baseSize);
+        }
+
+        .input-box-center::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 30px;
+            background-color: #DDDDDD;
+            border-radius: 50%;
+        }
 
         .input-box-3 {
             // display: flex;
             position: relative;
             width: (200 / @baseSize);
             padding: (14 / @baseSize) (32 / @baseSize);
-            font-size: (14 / @baseSize);
 
             div:nth-child(2) {
                 color: #8a8a8a;
             }
 
-            .input-box-3-button {
+            .input-box-3-button-1 {
                 position: absolute;
                 border-radius: (50 / @baseSize);
                 top: (8 / @baseSize);
@@ -271,6 +301,38 @@ header {
                     color: #fff;
 
                 }
+
+                div {
+                    display: none;
+                }
+
+
+            }
+
+            .input-box-3-button-2 {
+                position: absolute;
+                border-radius: (50 / @baseSize);
+                top: (8 / @baseSize);
+                right: (18 / @baseSize);
+                height: (48 / @baseSize);
+                width: (100 / @baseSize);
+                background-color: #FF385C;
+                line-height: (48 / @baseSize);
+
+                svg {
+                    position: absolute;
+                    top: 50%;
+                    left: (30 / @baseSize);
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+
+                }
+
+                div {
+                    position: absolute;
+                    right: (22 / @baseSize);
+                    color: #fff;
+                }
             }
         }
 
@@ -279,4 +341,83 @@ header {
             border-radius: (32 / @baseSize);
         }
     }
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: (12 / @baseSize) 0 0 0;
+
+    .scrollable-area {
+        align-items: center;
+        display: flex;
+        flex-grow: 15;
+
+        .scrollable {
+            display: flex;
+
+            button {
+                background-color: #fff;
+                border: none;
+
+                svg {
+                    cursor: pointer;
+                    width: (23 / @baseSize);
+                    height: (23 / @baseSize);
+                    color: #BCBCBC;
+                }
+            }
+
+            .scroll-bar {
+                display: flex;
+                width: (1050 / @baseSize);
+                overflow-x: hidden; // 横向滚动
+                white-space: nowrap; // 让内容不换行
+                gap: (50 / @baseSize);
+
+
+                .bbr {
+
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        margin: (12 / @baseSize) 0 (10 / @baseSize) 0;
+                        gap: (5 / @baseSize);
+
+                        img {
+                            height: (24 / @baseSize);
+                            width: (24 / @baseSize);
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+        .filters span {
+            display: flex;
+            border: (1 / @baseSize) solid #222222;
+            padding: (7 / @baseSize) (16 / @baseSize);
+            border-radius: (5 / @baseSize);
+            margin-left: (20 / @baseSize);
+        }
+    }
+
+    .nav-right {
+        flex-grow: 1;
+
+        div {
+
+            div {
+                display: inline-block;
+                border: (1 / @baseSize) solid #222222;
+                border-radius: (5 / @baseSize);
+                padding: (7 / @baseSize) (16 / @baseSize);
+            }
+        }
+    }
+
 }

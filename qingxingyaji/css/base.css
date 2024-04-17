@@ -1,26 +1,33 @@
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
+
 * {
-  caret-color: transparent;
+    caret-color: transparent
 }
+
 body {
-  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: 'Roboto', sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
+
 .container {
-  width: 320vw;
-  margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
 }
+
+
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
+
 a {
-  text-decoration: none !important;
-  color: #333;
+    text-decoration: none !important;
+    color: #333;
 }
+
 a:hover {
-  text-decoration: none !important;
-  color: #333;
+    text-decoration: none !important;
+    color: #333;
 }
