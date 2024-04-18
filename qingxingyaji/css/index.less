@@ -1,6 +1,8 @@
 // 声明基准值变量
-@baseSize: 15.52vw;
-@baseSizeHeight: 11.46vw;
+// @baseSize: 15.52vw;
+// @baseSizeHeight: 11.46vw;
+
+@baseSize: 17.5vw;
 
 .w {
     padding: 0 (80 / @baseSize);
@@ -9,6 +11,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: (14 / @baseSize);
+    height: 3000px;
 }
 
 
@@ -371,10 +374,11 @@ header {
 
             .scroll-bar {
                 display: flex;
-                width: (1050 / @baseSize);
-                overflow-x: hidden; // 横向滚动
-                white-space: nowrap; // 让内容不换行
-                gap: (50 / @baseSize);
+                width: (1200 / @baseSize);
+                gap: (40 / @baseSize);
+                overflow-x: hidden; // 隐藏滚动条
+                scroll-behavior: smooth;
+
 
 
                 .bbr {
@@ -398,26 +402,99 @@ header {
         }
 
         .filters span {
+            cursor: pointer;
             display: flex;
             border: (1 / @baseSize) solid #222222;
-            padding: (7 / @baseSize) (16 / @baseSize);
-            border-radius: (5 / @baseSize);
-            margin-left: (20 / @baseSize);
+            padding: (12 / @baseSize) (16 / @baseSize);
+            border-radius: (10 / @baseSize);
+            margin-left: (10 / @baseSize);
+            gap: (10 / @baseSize);
+            border-color: #DDDDDD;
         }
     }
 
     .nav-right {
         flex-grow: 1;
 
-        div {
+        .right-box {
+            cursor: pointer;
 
             div {
-                display: inline-block;
+                display: flex;
+                align-items: center;
                 border: (1 / @baseSize) solid #222222;
-                border-radius: (5 / @baseSize);
-                padding: (7 / @baseSize) (16 / @baseSize);
+                border-radius: (10 / @baseSize);
+                padding: (9 / @baseSize) (16 / @baseSize);
+                border-color: #DDDDDD;
+                gap: 10px;
+
+                svg {
+                    width: (24 / @baseSize);
+                    height: (24 / @baseSize);
+                }
             }
         }
     }
 
+}
+
+
+
+
+.main-box {
+    display: flex;
+    margin-top: (10 / @baseSize);
+    flex-wrap: wrap;
+    gap: (20 / @baseSize);
+
+
+    .box {
+        position: relative;
+        // background-color: pink;
+        overflow: hidden;
+
+
+
+        a {
+            display: flex;
+
+
+            img {
+                // width: 100%;
+                width: (299 / @baseSize);
+                height: (284 / @baseSize);
+                border-radius: (15 / @baseSize);
+            }
+
+            .bi-heart {
+                position: absolute;
+                top: (10 / @baseSize);
+                right: (10 / @baseSize);
+                color: #fff;
+                width: (21 / @baseSize);
+                height: (21 / @baseSize);
+            }
+
+
+        }
+
+        .box-font {
+            padding-top: (17 / @baseSize);
+            display: flex;
+            flex-direction: column;
+            gap: (3 / @baseSize);
+
+            .score {
+                display: flex;
+                position: absolute;
+                right: (15 / @baseSize);
+                gap: (6 / @baseSize);
+            }
+
+        }
+
+        .price {
+            padding-top: 15px;
+        }
+    }
 }

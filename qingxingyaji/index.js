@@ -108,12 +108,37 @@ input_box_2_right.addEventListener('mouseleave', function () {
 
 
 
+const bar = document.querySelector('.scroll-bar')
+const right = document.querySelector('.button-right')
+const left = document.querySelector('.button-left')
+
+
+right.addEventListener('click', function () {
+    console.log('我点到了');
+    bar.scrollLeft += 5000
+})
+
+
+left.addEventListener('click', function () {
+    console.log('我点到了');
+    bar.scrollLeft -= 5000
+})
 
 
 
+const scrollingElement = window
 
 
 
+scrollingElement.addEventListener('scroll', function (even) {
+    const scrollPosition = window.scrollY;
+    const ipt = this.document.querySelector('.input-box-1 label input')
+    // 在滚动时执行的代码
+    console.log(scrollPosition);
+    if (scrollPosition === 100) {
+        // ipt.remove()
+    }
+})
 
 
 
