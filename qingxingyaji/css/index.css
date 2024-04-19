@@ -330,7 +330,7 @@ header .head .login .user button div:nth-child(2) svg {
   display: flex;
   margin-top: 0.57142857vw;
   flex-wrap: wrap;
-  gap: 1.14285714vw;
+  gap: 0.85714286vw;
 }
 .main-box .box {
   position: relative;
